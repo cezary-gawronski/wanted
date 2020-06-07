@@ -1,0 +1,80 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+:root {
+  --hair-color: red;
+}
+
+body {
+  margin: 0;
+  font-family: "Metal Mania", sans-serif;
+}
+
+.main-header {
+  text-align: center;
+  font-size: 88px;
+  letter-spacing: 10px;
+  margin-bottom: 0;
+  /* background-color: var(--hair-color); */
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.imges-container {
+  position: relative;
+  width: 750px;
+  height: 750px;
+}
+
+.images {
+  position: absolute;
+  max-width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.form {
+  font-size: 24px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  color: var(--hair-color);
+}
+
+.images:not(.wanted) {
+  /* mix-blend-mode: luminosity; */
+  /* opacity: 0.5; */
+  mix-blend-mode: hue;
+}
+
+.wanted-hair {
+  /* background-color: var(--hair-color); */
+  /* filter: hue-rotate(var(--hair-color)); */
+  /* filter: drop-shadow(0px 0px 0px var(--hair-color)); */
+  /* filter: hue-rotate(var(--hair-color)); */
+}
+.transparency-object {
+  /* opacity: 55%; */
+}
+
+.form {
+  /* position: absolute; */
+}
+
+#product-svg {
+  /* background-color: var(--hair-color); */
+  mix-blend-mode: overlay;
+  opacity: 0.5;
+  fill: var(--hair-color);
+}
